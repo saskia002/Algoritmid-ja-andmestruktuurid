@@ -1,0 +1,37 @@
+1. praktikum
+
+Tutvus C-keelega. Võrdlus Pythoniga.
+
+Palun kasuta programmide koostamiseks oma pead koos C-keele materjaliga. Sellest on rohkem kasu, kui valmis
+ruutvõrrandi lahendusprogrammi internetist kopeerimisest.
+
+Ülesanne 1
+Kirjuta programm, mis sisestab täisnurkse kolmnurga kaatetite pikkused ning väljastab selle kolmnurga pindala
+ja hüpotenuusi pikkuse. Kas kolmnurga pindala tuleb alati õige, kui kaatetid on määratud täisarvulistena? Näiteks
+kui mõlemad kaatetid on paaritud arvud? Miks? Mida teha?
+
+Ülesanne 2
+Kirjuta programm, mis sisestab ruutvõrrandi
+ax2 + bx + c = 0
+kordajad ja leiab selle reaalarvulised lahendid (kui need on olemas) või väljastab korrektse teate 
+(kui võrrandil reaalarvulised lahendid puuduvad).
+Muide, ruutvõrrandi saab ka nö võrrandi kujul (ax2 + bx + c = 0) sisestada ja sellest formaadi abil kordajad 
+lasta välja noppida. Proovi!
+
+Meenutuseks ka testandmed:
+a       b       c       x1      x2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2       5       2      -0.5     -2
+3       2       -1      0.33    -1
+2       2       2       reaalarvulised lahendid puuduvad
+2       4       2       -1
+
+Ülesanne 3
+Kirjuta programm, mis töötab menüü põhimõttel: kasutaja sisestab kaks arvu. Programm esitab valikud: liitmine, lahutamine, korrutamine, jagamine (lase valikud teha arvuga), teeb tehte ja väljastab vastuse. Tegevust saab soovi korral korrata.
+
+Ülesanne 4
+Kirjuta programm, mis leiab sisestatud arvude hulgast suuruselt teise väärtuse. Kontrolli, 
+et programm töötab õigesti ka siis, kui sisestatakse mitu ühesuguse maksimaalse väärtusega elementi. 
+Kui see osutub liiga suureks pähkliks, siis sobib ka tavaline maksimumi leidmine. 
+Maksimum leitakse kohe sisestamise käigus, andmeid massiivi paigutamata. Kasuta while-tsüklit, 
+kus teatud suuruse (nt -999) sisestus on sisestamise lõpu tunnuseks.

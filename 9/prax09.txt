@@ -1,0 +1,41 @@
+
+Graafid - lühim tee
+
+Loodan, et Dijkstra algoritm on korralikult läbi mõeldud.
+
+Ülesanne: Rändame Eestimaal
+
+Programm küsib kasutajalt reisi alguse ja lõpu ning väljastab tee (kohanimed) koos teepikkusega. 
+Lahendus kasutab Dijkstra algoritmi. Algoritmis leitakse järgmine uuritav tipp prioriteetidega järjekorra abil. 
+Meie kasutame vähemefektiivset viisi: otsime teepikkuste massiivist miinimumi.
+
+Graaf arvutis:
+a) programmi töö ajal: naabrusmaatriks + massiiv kohanimedega;
+b) mitmekordseks kasutamiseks: seostefail ja kohtade fail.
+
+Vali piirkond Eesti kaardilt (skaneeritud Regio atlasest, mis ei ole tegelikult ilus, aga atlas on igivana) 
+ja kirjelda seda graafina. Mõtle läbi, mis on graafi tipud ja mis on kaared. Esialgses graafis võiks olla ca 20 tippu.
+Moodusta graaf ja kirjuta andmed faili.
+
+Andmed salvesta failidesse soovituslikult niimoodi (et saaksid hiljem kogu Eestit hõlmavaid faile kasutada):
+- ühes failis on kohtade nimed igaüks ise real, numbreid kohtade ees ei ole, kuid mõtteliselt on nad nummerdatud 
+alates ühest;
+- teises failis on seoseinfo - reas kolm täisarvu: kohtade järjekorranumbrid ja kaugus nende vahel. 
+
+Maanteed on mõlemas suunas sõidetavad. Kui on serv Tallinnast Keilasse, siis on ka Keilast Tallinnasse. 
+Mõlemat seost ei ole vaja faili kirjutada, kuid sellega tuleb arvestada andmeid failist lugedes ja naabrusmaatriksisse kandes.
+
+Naabrusmaatriksi, massiivide ja faili lugemisega tegelesime. Topoloogilise sorteerimise lahendus on lahenduste kaustas ja annab ideid seoste faili väljalugemiseks ja naabrusmaatriksi koostamiseks.
+
+Alusta tööd vaid koha numbritega. Loe andmed seoste failist välja ja kirjuta naabrusmaatriksisse.
+
+Edasi: deklareeri täiendavad vajalikud massiivid, algväärtusta, küsi algus ja lõpp (arvudena) jne
+Kõike seda tehes mõtle sellele, kuidas algoritmi käsitsi läbi mängisid.
+
+Praktikatunni lõpuks võiks olla Dijkstra algoritm kirjas - kuni selleni, et tee ka moodustatud tabelitest-massiividest välja loetakse. Lisa arvukalt väljatrükke, et tabelite täitumisel silma peal hoida ning tegeliku graafi järgi kontrollida Abiks on ka enda valitud piirkonna paberile joonistamine, kasutades tippudes numbreid kaartel kaale. Nii on parem programmi töö käiku jälgida.
+
+Soovitan soojalt ise koodi kirjutada, mitte otsida valmis lahendusi, mida võib taas arvukalt leida. Ise läbi kirjutamine aitab algoritmi loogikast paremini aru saada ja seda arusaamist võib Sul eksamil tarvis minna.
+
+Kohtade nimedega tegeleme järgmisel nädalal.
+
+  

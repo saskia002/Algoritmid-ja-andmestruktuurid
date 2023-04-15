@@ -1,0 +1,66 @@
+5. praktikum
+
+Teemad: Pinu, järjekord ja ringjärjekord
+
+Kuidas õnnestus avaldise teisendamise programm ning uute funktsioonide tegemine ahela jaoks?
+Kas on selle kohta küsimusi?
+
+Ülesanne 1 Postfiks-avaldise arvutamine
+Kasutades samu funktsioone proovi läbi postfiksavaldise arvutamine.
+Võid täiendada sama programmi.
+
+Postfiks avaldise arvutamise algoritm oli järgmine:
+tööta märkhaaval
+- kui on arv, pane pinusse
+- kui on operaator, võta pinust 2 arvu, tee operaatorile vastav tehe ja kirjuta vastus pinusse (mõtle, kumba pidi operandid tehtesse panna!).
+
+Kui avaldis on läbitöötatud, on pinus vastus.
+
+Proovi algorimist aru saada, arvutades ise välja tulemused harjutustunni avaldistele:
+5 3 * 1 3 2 - + +
+5 9 * 8 7 4 6 + * 2 1 3 * + * + *
+
+
+Avaldis on string. Arvutamiseks tuleb arvud teisendada päris arvuks. 
+Standard-teeki kuulub stringi täisarvuks teisendamise funktsioon atoi(). Aga kui võtame strigist (märkide massiiv!)
+ühe sümboli, siis ei ole see string vaid märk (char) ja selle jaoks nimetet funktsioon ei sobi.
+
+Toimida saab järgmiselt:
+
+int number;
+char c_number
+number = c_number - '0';
+
+Selgitus:
+Märgitüüpi väärtuse omistamisel täisarvulisele muutujale läheb muutujasse automaatselt märgi ASCII kood. Et ASCII tabelis märgid '0' .. '9' on järjest, siis '0' koodi lahutamine annab tulemuseks arvulise väärtuse ('0' kood on 48, '2' kood on 50, 48 - 50 = 2).
+
+
+
+Järjekord ja realisatsiooni erinevused võrreldes pinuga
+-------------------------------------------------------
+
+Ülesanne 2 Järjekorra funktsioonid
+Tee massiivil või ahelal baseeruva järjekorra jaoks vajalikud funktsioonid (lisamine enqueue(), kustutamine dequeue(), kastühi, ...). Proovi läbi funktsioonide käitumine väikese testimisprogrammiga. Järjekorral on kaks otsa: rear, kuhu elemente lisatakse, ja front, kust elemente kustutatakse (niiödelda teenindatakse). 
+
+
+Mis on ringahel?
+----------------
+
+Kaks ülesannet algoritmide leidmiseks. Kas nendes on midagi sarnast? Millist andmestruktuuri kasutada? Kuidas toimida?
+
+Ülesanne 3A METSKAPTEN
+
+Metskapteni laeval on probleem vee peal püsimisega. Kogu last on juba üle parda heidetud, kuid laev vajub ikka veel. Ainus võimalus on mõned reisijad üle parda heita. Et valik oleks aus, seab kapten laeva kõik reisijad ringi ja järjest lugedes iga K-s heidetakse üle parda, kuni vajumine lakkab. 
+Et aga laeval on mitu kapteni sugulast, siis tuleb nad seada ringis parimatele positsioonidele. Leida esialgses ringis kõige ohutumad positsioonid, et kõik kapteni sugulased nendele paigutada.
+Sisesta andmeid (reisijate arv, mitmes üle parda heidetakse ja kapteni sugulaste arv) klaviatuurilt.
+
+Näiteks kui reisijaid on 10, sugulasi 2 ja üle parda heidetakse iga kolmas, on kõige ohutumad positsioonid kapteni sugulaste jaoks 4 ja 10.
+
+
+Ülesanne 3B PEALIK
+Et leida pealikku juhusliku valiku meetodil on üks võimalus asetada kandidaadid ringi seisma ja hakata neid ükshaaval elimineerima, arvates välja nt iga kaheksanda inimese, kuni üks inimene on alles. 
+Koostada algoritm (programm) pealiku tuvastamiseks. Olemuselt sarnane ülesanne Metskapteniga, ainult et alles jääb alati üks.
+
+
+
+

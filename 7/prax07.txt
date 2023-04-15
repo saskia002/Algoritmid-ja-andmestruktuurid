@@ -1,0 +1,29 @@
+Ülesanded puudega
+
+Ülesanne 1. Loomade arvamine
+----------------------------
+Loomade arvamise mänguga (loomad) pidite vastavalt eelmise reede ülesandele mängima seni, kuni hakkab tekkima idee, mis on andmed selles mängus ja kuidas neid programmi töö ajal talletada tuleks. Tuleta meelde:
+1. Mis on andmed?
+2. Kuidas andmed kahendpuuna välja näevad? 
+3. Kus on küsimused ja kus on loomad?
+
+Kui see nüüd selgeks saanud on, siis on aeg programmi kirjutama hakata.
+
+Abi on morse dekodeerimise lahendusest (lahenduste kaustas). Sealt saab võtta puu sõlme struktuuri. Ainult et seekord on infoks sõlmes string.
+Ära palun proovi kasutada BuildTree() funktsiooni, sest sellest siin ülesandes kasu ei ole.
+Kasu on aga puu läbimisest (liikumine ühes või teises suunas).
+
+Algpuu ehitamisel võid kasutada näidet ahela loomisest "kirve meetodil". Lihtsalt puu sõlmed tuleb teise loogikaga ühendada.
+
+Loe ka eelmise nädala praktikumi all loomapuu selgitust.
+
+
+Ülesanne 2. Prioriteetidega ehk eelisjärjekord
+----------------------------------------------
+Eelisjärjekorras määratakse teenindusjärjekord igale järjekorras olijale prioriteet ja selle alusel toimub teenindamine. See tähendab, et elemendid peavad olema kuidagi järjestatud. Aga elemente võib lisanduda ja prioriteet võib ka muutuda. Et järjekord oleks efektiivne, peab elemendi lisamine, eemaldamine ja prioriteedi muutmine toimuma kiiresti.
+Üks võimalus järjekorra realiseerimiseks on kahendkuhi (binary heap). Täpsemalt saab sellest lugeda sorteerimismaterjali kuhjaga sorteerimise kirjeldusest. See näeb välja kui kahendpuu, kus oluline on elementide paigutuse loogika - vanem on alati suurema väärtusega kui tema lapsed. See tähendab, et kuhja juur on kõige suurem. Järjekorra mõttes on see esimene teenindatav. Kui juur on teenindatud, tuleb järjekord korrastada ja uus suurima prioriteediga element juureks viia ehk kuhi korrastada.
+Võiks mõelda funktsioonide tegemisele, mis realiseerivad eelisjärjekorra:
+- elemendi lisamine kuhja vastavalt prioriteedile (lisada massiivi lõppu, liigutada ülespoole ehk korrastada kuhi liigutades elementi alt üles)
+- elemendi eemaldamine (võtta esimene element ära, asendada ta viimasega ja korrastada kuhi liigutades elementi ülalt alla)
+
+Vaata sorteerimise materjalis funktsiooni heapify(). Tema liigutab üleval juureks oleva elemendi allapoole oma kohale.

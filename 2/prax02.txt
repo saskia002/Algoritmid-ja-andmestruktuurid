@@ -1,0 +1,74 @@
+2. praktikum
+
+Tsüklilaused ja massiivid
+-------------------------
+Massiivide deklaratsiooni näide oli viimase loengu slaididel.
+Lisaks võiks lingikogus huvi pakkuda "A TUTORIAL ON POINTERS AND ARRAYS IN C".
+Vaatame ka näidet massiivide kasutamisest.
+Proovime selle näite panna käima greenys.
+1. Kopeeri tekst
+2. Alusta faili vim massiivid.c
+3. Vajuta i (vim läheb insert-reşiimi).
+4. Hiire parempoolse klahviga klõps - tekst "pasteerub".
+5. Klahv Esc - vim läheb käsureşiimi
+6. :w (write - salvesta)
+7. Ctrl + z (ajutiselt vimi peatamine ja väljumine greeny käsureale)
+8. gcc massiivid.c (faili kompileerimine, võimalikud veateated või tekib fail a.out); kui anda käsk gcc massiivid.c -omassiivid,
+tekib a.out asemel fail massiivid
+9. masinkoodis programmi käivitamine: ./a.out
+10. fg - et minna tagasi koodi kallale (fg - foreground)
+11. :q - väljumine vim'ist
+
+
+Ülesanded tsüklilausete ja massiiviga kohanemiseks ... ning mõtlemise ülessoojendamiseks.
+
+Ülesanne 1
+Kirjuta programm, mis summeerib antud sisestatud arvudest vaid need arvud, millele eelnev 
+arv on positiivne. Alternatiiv - summeerib paarisarvud. Kasuta for-tsüklit (alguses küsitakse, mitu arvu on).
+Seda tee kasutades massiivi. Kõigepealt loe andmed massiivi, siis töötle. Indeksi saamiseks kasuta for-tsüklit.
+Arvesta, et tervet massiivi ühe käsuga välja trükkida ei saa, selleks vajad tsüklit. (Mida näed, kui annad käsu
+terve massiivi korraga trükkimiseks?)
+
+Ülesanne 2 
+Proovi realiseerida lihtne sorteerimise algoritm - valiksorteerimine. Algoritmi tööpõhimõte on
+järgmine: kogu massiviist otsitakse üles vähim väärtus, seejärel vähim väärtus ja massiivis 1. kohal olev väärtus
+vahetatakse omavahel. Alustades massiivi 2. elemendist korratakse tegevust - otsitakse miinimum ja vahetatakse 2.
+kohal oleva väärtusega. Ja nii kuni massiivi lõpuni. Peale iga kordust saab massiviis järgmine arv oma õigele kohale.
+
+Ülesanne 3
+Kirjuta menüü abil juhitav programm, mis kõigepealt laseb sisestada soovitud koguse arve.
+Seejärel kuvab menüü, millega saab lisada uusi arve:
+1. Massiivi algusesse
+2. Massiivi lõppu
+3. Massiivi keskele soovitud kohale (nt kolmandale kohale) - koha annab ette kasutaja
+Tuleta meelde, mida selgitasin loengus massiivi keskele (ja algusesse) arvude lisamise kohta!
+Arvu lisamisel tuleks ka kõigepealt veenduda, kas uus arv mahub veel massiivi ära
+Tegevust peaks saama korrata.
+
+Ülesanne 4
+Sisesta ükshaaval arve (seekord ujukomaarve). Paiguta nad massiivi nii, et see oleks kohe 
+sorteeritud. Selleks võrdle järjest arvu massiivis olevatega, alustades massiivi lõpust. Ning
+kui uus arv on väiksem, kui massiivis olev, tõsta massiivi arv ühe koha võrra edasi. Kui järg
+jõuab sisestatud arvust väiksema arvuni, on jõutud kohani, kuhu uus arv lisada.
+Selles ülesandes on vaja kahte tsüklit - välimine tsükkel võib olla for - küsid eelnevalt, mitu arvub sisestatakse.
+Sisemine tsükkel on kindlasti while-tüüpi, sest Sa ei tea, mitu arvu tuleb eest ära tõsta, et tekiks õige koht uuele
+arvule.
+Kui kogu lahenduse leidmine tundub lootusetult raske, piirdu järgmisega: 
+Sisesta massiivi N arvu kasvavas järjekorras. 
+Küsi juurde veel üks arv ja proovi see lisada massiivi oma kohale nii, et massiivi lõpust alustades tõstad arve üks
+haaval eest ära, kuni tekib vahe õigete arvude vahele. Proovi, et programm töötaks ka siis, kui lisatakse kõigist seni
+lisatud arvudest väiksem arv ja suurem arv.
+Kui sellise tsükli tööle saad, siis tegelikult on üle poole ülesandest lahendatud.
+
+
+Osa ülesandeid jääb koju pusimiseks. Tunni lõpetuseks kiire pilk viitadele.
+
+Ülesanne 5
+Vaatame ja joonistame programmis viidav2rk.c toimuvat.
+
+Lisa programmi järgmised tegevused:
+- eralda mälu ühe täisarvu jagu, pane aadress muutujasse ptr3 ja küsi kasutajalt väärtus aadressil ptr3 paiknevasse mäluvälja. 
+NB! scanf() vajas väärtuse sisselugemiseks mäluaadressi. Seega kuidas seda seekord kirjutada?
+- Pane ptr1 viitama samale mälupesale, kuhu ptr3-gi.
+- Kuidas saame nüüd kätte arvu 20, mis lausega *ptr1 = 20; mällu kirjutati? Trüki välja.
+- Trüki välja muutuja k aadress ja muutuja ptr sisu. Mida märkad?

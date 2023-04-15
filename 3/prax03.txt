@@ -1,0 +1,37 @@
+3. praktikum
+
+Küsimusi tsüklitest ja massiividest?
+
+Katsetame nüüd lõpuks greenys ja vim-iga (vt väikest selgitust eelmise nädala materjalis).
+
+Aadressid - vaatame näidet viidav2rk.c
+Peale sellest arusaamist:
+Lisa programmi järgmised tegevused:
+- eralda mälu ühe täisarvu jagu, pane aadress muutujasse ptr3 ja küsi kasutajalt väärtus aadressil ptr3 paiknevasse mäluvälja. 
+NB! scanf() vajas väärtuse sisselugemiseks mäluaadressi. Seega kuidas seda seekord kirjutada?
+- Pane ptr1 viitama samale mälupesale, kuhu ptr3-gi.
+- Kuidas saame nüüd kätte arvu 20, mis lausega *ptr1 = 20; mällu kirjutati? Trüki välja.
+- Trüki välja muutuja k aadress ja muutuja ptr sisu. Mida märkad?
+
+Mis andmetüüp on C-keeles struktuur (struct)? Info on viitade materjalis ning näites kirje_struct.c
+
+Joonista, mis toimub programmis linked_1.c ja linked_2.c (kasuta kaste ja nooli)
+
+Ülesanne 1
+Täienda linked_2.c-d ahelasse lisatud väärtuste väljatrükiga.
+Täienda sama programmi otsimisega: peale algandmeteks olevate arvude sisestamist saab kasutaja 
+sisestada veel ühe arvu, programm tuvastab, kas see arv on listis olemas või mitte. 
+Väljasta ka mitmendas elemendis on otsitud arv?
+
+Me arutasime harjutustunnis paari ahelaga seotud algoritmi. Proovi need nüüd realiseerida eelmise
+programmi jätkuna.
+
+1. Leia ahelas olevate elementide arv. 
+2. Loo ahel N elemendist, lisades elemente ahela lõppu.
+3. Tagasta ahela esimese elemendi infovälja väärtus, kustutades elemendi ühtlasi ahelast (pinu käsk pop()).
+
+Proovi lahendada ka neid ülesandeid:
+1. Lisa loodud ahela lõppu uus element.
+2. Küsi kasutajalt kaks täisarvu - ahelasse lisatav väärtus ja mitmendaks uus element läheb. 
+Lisa uus element ahelas soovitud kohale. Võid eeldada, et ahelas on piisavalt elemente. 
+NB! 1. elemendiks lisamine tuleb teha erinevalt, sest nõuab esimese elemendi aadressi (head) muutmist.

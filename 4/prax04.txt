@@ -1,0 +1,61 @@
+4. praktikum
+
+Kuidas õnnestusid eelmise nädala ülesanded? Küsimusi?
+
+Märgid (char) ja stringid C-s
+-----------------------------
+Stringi-tüüpi muutujat tavalises C-s ei ole. On märk (ingl character), deklareerimiseks keelesõna char. Sisestamiseks ja trükkimiseks vormingustring %c.
+Stringid on märkide massiivid. C-s on nn "null-terminated string", st. iga stringi lõpus on '\0'. String deklareeritakse tavaliselt pikemana ning '\0' ütleb, kus tegelik sisu lõppeb.
+
+Sarnaselt massiividele tähistab string-muutuja nimi tema algusaadressi. Kasutades formaati "%s" saab terve stringi rahulikult välja trükkida. 
+
+Stringi deklareerimine võib põhimõtteliselt toimuda kahel kujul:
+char minutekst[50];
+Mälu eraldatakse 50 märgi jaoks. NB! '\0' peab ka ära mahtuma, seega tegelikult on ruumi 49le märgile.
+
+char *tekstiviit;
+Mälu eraldatakse aadressi jagu. Stringi enda jaoks tuleb mälu malloc()-iga reserveerida.
+
+Töötab näiteks omistamine:
+tekstiviit = minutekst;
+Peale mida mõlemad muutujad sisaldavad sama väärtust ehk mälupesa aadressi ehk viitavad samale piirkonnale mälus.
+
+Pane veel tähele, et märgitüüpi konstantide eraldajateks on ülakomad '' ja stringidel jutumärgid "". Erinev on ka vormingustring - märgi jaoks %c ning stringi jaoks %s.
+Veel tuleb arvesta, et stringe tavalisel viisil võrrelda ja omistada ei saa, vaid selleks on funktsioonid
+(vt stringide näidet veebilehelt).
+
+Teeme väikese näite: sisestame stringi ja seejärel trükime sümbol-haaval for-tsükli abil välja.
+See katse on abiks 3. ülesande lahendamisel.
+
+Ülesanne nr. 1
+Vaatame 2. nädala harjutustunni teist poolt - tutvus pinuga ja postfikskujul avaldisega.
+
+Ülesanne nr. 2
+Vaata programmi pinu_proov.c. Mõtle läbi, kuidas pinu operatsioonid on realiseeritud.
+NB! Samas näeme ka seda, kuidas C-s on tehtud funktsioonid. Funktsioon on sama ülesehitusega
+kui peaprogramm main(), mida C-s ka funktsiooniks nimetatakse.
+Kuidas on määratud argumendid? Kuidas tagastatakse väärtused?
+
+Ülesanne nr. 3
+Realiseeri infiksesituses aritmeetikaavaldise teisendamine postfiksesitusse.
+Lihtsustame olukorda nii, et avaldises on kõik arvud ühekohalised.
+
+Et vaheldumisi on arvud ja tehtemärgid (erinevat tüüpi väärtused), siis on otstarbekas lugeda kogu sisendit
+stringina ja töödelda kui (märkide)massiivi. Et ülesandes ei ole juttu arvutamisest, ei ole ka vajadust 
+andmetüüpide teisendamiseks.
+
+Avaldise teisendamise postfiksesitusse. Eeldus - iga tehte jaoks on oma sulgede paar.
+- arv kirjuta väljundisse;
+- (vasakut) lahtisulgu ignoreeri;
+- operaator (tehtemärk) pane pinusse;
+- parema kinnisulu leidmisel võta operaator pinust ja kirjuta väljundisse.
+
+
+Arutame, kuidas ühe viidaga ahelloendi abil pinu etendada (erinevus massiivist).
+
+Ülesanne nr 4
+Tee uued pinu funktsioonid, kus pinu realiseeritakse dünaamiliselt (ühe viidaga ahelloendina). 
+Funktsioonide liidesed ehk päised peavad jääma samaks eelnevas ülesandes kasutatutega.
+Veendu, et pinu näidisülesanne uute funktsioonidega töötab. Seejärel veendu, et avaldise 
+teisendamine ka töötab.
+

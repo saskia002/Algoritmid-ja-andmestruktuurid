@@ -48,8 +48,4 @@ int main(void){
 
     printf("arr len on: %d\n", getArrayLength(node));
 
-
-
-
-
 }

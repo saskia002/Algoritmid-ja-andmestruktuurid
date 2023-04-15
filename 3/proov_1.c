@@ -6,10 +6,6 @@ void main() {
     int *ptr;
     int *ptr1, *ptr2, *ptr3;
 
-
-
-
-
     ptr = &k;      /* Muutujasse ptr omistatakse muutuja k aadress. */
     printf("Muutujas k olev arv tema aadressi järgi %d\n", *ptr);
     *ptr = 12;

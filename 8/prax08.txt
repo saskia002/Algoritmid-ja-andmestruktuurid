@@ -1,0 +1,35 @@
+Praktikum nr 8
+
+Graafid
+
+Ülesanne 1
+Loeme failist graafi kirjelduse ja esitame selle arvutis naabrusmaatriksina. Graafi kirjeldus seisneb seoste esituses sarnasel kujul, nagu oli harjutustunni graafidel. Kaks võimalust:
+1. Faili esimeses reas on seoste arv (võib panna ka kaks arvu - tippude arv ja seoste arv) ning sellele järgnevad arvupaarid, mis kujutavad seoseid tippude vahel. Faili saab lugeda for-tsükliga.
+2. Failis on ainult seosed tippude vahel. Faili tuleb lugeda while-tsükliga kuni faili lõpuni ja see on tundlikum variant.
+
+Naabrusmaatriks on kahemõõtmeline massiiv.
+
+Lugemiseks võid võtta harjutustunnist graaf_topo.txt faili, mida võid kenasti täiendada tippude ja seoste arvuga.
+Enne faili lugema asumist on soovitav uurida näidet faili_lugemine2.c. Esiteks leiad sealt formaadiga lugemise näite. St näite, kus failist lugemisel info teisendatakse. Teiseks leiad ka kahemõõtmelise massiiviga töötamise näite. Näites loetakse arvud järjest kahemõõtmelisse massiivi. Aga stopp! Meil on natuke teine olukord. Mõtle natuke!
+
+Kui oled naabrusmaatriksi failist sisse lugenud, siis trüki see välja ilusal ja arusaadaval kujul.
+
+Ülesanne 2
+Tipu naabrite kuvamine. Lase kasutajal sisestada tipu number ja trüki välja selle tipu naabertipud.
+
+Ülesanne 3
+Programmeerime läbi harjutustunnis proovitud topoloogilise sorteerimise.
+Vajalikud sammud (eeldusel, et naabrusmaatriks on moodustatud):
+1. Moodustame nn eellaste tabeli ehk tabeli, kus on kirjas igasse tippu sisenevate kaarte arv. Selleks on vaja ühte ühemõõtmelist massiivi. Kuhu selles massiivis kirjutad näiteks tippu 2 sisenevate kaaret arvu? Kuidas saad teada igasse tippu sisenevate kaarte arvu?
+2. Hakkame välja trükkima topoloogiliselt sorteeritud tippude jada. 
+Selleks:
+Vaata sisenevate kaarte arvude tabelit. 
+Kui sisenevate kaarte arv = 0, 
+trüki välja tipu number, 
+leia kõik selle tipu naabrid ja vähenda neisse sisenevate kaarte arve 1 võrra.
+Korda tegevust, kuni igal pool on eelaste arv 0 või kuni kõik tipud on välja trükitud.
+
+
+
+
+
